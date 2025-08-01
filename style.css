@@ -1,0 +1,144 @@
+/* =============================== */
+/* ✅ Accessibility: Skip Link     */
+/* =============================== */
+.visually-hidden-focusable {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.visually-hidden-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 1rem;
+  padding: 0.5rem;
+  background: #0d6efd;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* =============================== */
+/* ✅ Navigation Layout & Styling */
+/* =============================== */
+.main-navbar {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+nav img {
+  width: 10%;
+}
+
+/* =============================== */
+/* ✅ Headings & Text Styling     */
+/* =============================== */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.75rem;
+  color: #0d6efd;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/* =============================== */
+/* ✅ Icons, Profile & Visuals    */
+/* =============================== */
+.profile-img {
+  border-radius: 50%;
+  width: 150px;
+}
+
+.skill-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.home-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: #0d6efd;
+}
+
+/* =============================== */
+/* ✅ Layout: Grid System         */
+/* =============================== */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  align-items: start;
+  row-gap: 2rem;
+}
+
+.grid img {
+  width: 100%;
+}
+
+/* =============================== */
+/* ✅ Layout: Flex System         */
+/* =============================== */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* =============================== */
+/* 🚫 Commented Styling           */
+/* =============================== */
+/*
+li {
+  list-style-type: disc;
+}
+*/
+
+/* =============================== */
+/*  Form Styling           */
+/* =============================== */
+form {
+  max-width: 80%;
+  margin: 0 auto;
+  
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"], input[type="reset"] {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #0d6efd;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+  background-color: #0b5ed7;
+}
